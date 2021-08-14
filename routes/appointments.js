@@ -6,6 +6,7 @@ const prisma = new PrismaClient()
 
 // Health check
 router.get('/', async (req,res) => {
+    const t = 1;
     res.send('Server is running');
 });
 
