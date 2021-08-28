@@ -1,0 +1,14 @@
+POST http://localhost:8081/createappointment 
+content-type: application/json
+
+{    
+    "email": "test@gmail.com",
+    "firstName":"Willem",
+    "lastName":"Botha",
+    "cellphone":"0769693806",
+    "petName":"Jax",
+    "petType":"Dog",
+    "vistReason":"Sore foot",
+    "appointmentEndDate":"2021-07-29 08:04:03.137",
+    "appointmentStartDate":"2021-07-30 08:04:03.137"
+}
