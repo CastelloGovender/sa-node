@@ -16,4 +16,16 @@ router.get('/appointments', async (req,res) => {
     res.send(allUsers);
 });
 
+// create app
+router.post('/appointments', async (req,res) => {
+    const appName = req.params.get('appName')
+    const allUsers = await prisma.appointment.create(appName);
+    res.json(allUsers);
+});
+
+//signup and sign in
+const userCtrl = require('../addUser')
+router.post('/signup', userCtrl.signup);
+router.post('/login', userCtrl.login);
+
 module.exports = router;
