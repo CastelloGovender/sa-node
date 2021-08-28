@@ -3,7 +3,7 @@ const router = express.Router();
 const { PrismaClient } = require('@prisma/client')
 
 const prisma = new PrismaClient();
-const userRoutes = require('./')
+
 
 //Create new appointment.
 router.get('/seed', async (req,res) => {

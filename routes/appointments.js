@@ -24,7 +24,7 @@ router.post('/appointments', async (req,res) => {
 });
 
 //signup and sign in
-const userCtrl = require('../addUser')
+const userCtrl = require('../controllers/users')
 router.post('/signup', userCtrl.signup);
 router.post('/login', userCtrl.login);
 
